@@ -1,4 +1,4 @@
-print ('Hello, World!')
+#print ('Hello, World!')
 
 minutes=62
 seconds=10
@@ -25,16 +25,15 @@ def min_sec():
     while speed_sec>60:
         speed_min+=1
         speed_sec+=-60
-    return ("minutes/mile: " + str(speed_min) + " min, " + '{:.2f}'.format(speed_sec) + " sec")
-
+    return 'minutes and seconds a mile: {} min, {:.2f} sec'.format(speed_min, speed_sec)
 def mi_hour():
     speed_sec=racespeed()
     speed_hr=(60*60)/speed_sec
     return speed_hr
     
-print(Seconds(minutes, seconds))
-print(miles(kms, km_mi))
-print('{:.2f}'.format(racespeed()))
+print("total seconds: " + str(Seconds(minutes, seconds)))
+print("total miles: " + str(miles(kms, km_mi)))
+print('Speed in seconds a mile: {:.2f}'.format(racespeed()))
 print(min_sec())
 print('miles/hour: {:.5f}'.format(mi_hour()))
 
