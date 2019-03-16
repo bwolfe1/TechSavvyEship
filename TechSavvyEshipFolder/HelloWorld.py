@@ -37,5 +37,7 @@ print('Speed in seconds a mile: {:.2f}'.format(racespeed()))
 print(min_sec())
 print('miles/hour: {:.5f}'.format(mi_hour()))
 
+import datetime
 
-    
+print(datetime.datetime.now())
+
