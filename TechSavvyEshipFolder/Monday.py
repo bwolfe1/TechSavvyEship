@@ -42,11 +42,11 @@ def Quadratic(a,b,c):
         sub_x="-" + str(b)+ "-" + "{:.2f}".format(sub_x)+"i"
     return add_x + ", "+ sub_x
 
-a=int(input("type a number"))
-b=int(input("type a number"))
-c=int(input("type a number"))
+#a=int(input("type a number"))
+#b=int(input("type a number"))
+#c=int(input("type a number"))
 
-print("the two roots are: "+ Quadratic(a,b,c))
+#print("the two roots are: "+ Quadratic(a,b,c))
 
 def BMI(lbs, inch):
     BMI_score=703*lbs/(inch**2)
@@ -67,4 +67,28 @@ def BMI(lbs, inch):
 
 #print("With BMI of:" + BMIs)
 
+team="New England Patriots"
+
+#letter=team[1]
+
+prefixes= ['J', 'K', 'L', 'M', 'N', 'Ou', 'P', 'Qu']
+suffix = 'ack'
+
+#for letter in prefixes:
+   # print (letter + suffix)
+
+    
+#print(team[4:11]) #England
+
+#print(team[12:]) #Patriots
+
+#print (team[::2]) #Every other Character
+
+#print(team[::-1]) #Backwords
+
+#print(team.find('e')) #finds the first instance of the given character
+
+#print(team.endswith("ts")) # tells you if the actual suffix matches given suffix
+
+#print(team.endswith("t"))
 
