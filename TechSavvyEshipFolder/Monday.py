@@ -31,22 +31,22 @@ def sqr_1(a):
 
 def Quadratic(a,b,c):
     if (b**2 - 4*a*c)/2*a >=0:
-        add_x=-b+ math.sqrt((b**2 - 4*a*c)/(2*a))
-        sub_x=-b- math.sqrt((b**2 - 4*a*c)/(2*a))
-        add_x=str(add_x)
-        sub_x=str(sub_x)
+        add_x=math.sqrt((b**2 - 4*a*c)/(2*a))
+        sub_x=math.sqrt((b**2 - 4*a*c)/(2*a))
+        add_x="{:.2f}".format(add_x)
+        sub_x="{:.2f}".format(sub_x)
     else:
         add_x=math.sqrt(abs((b**2 - 4*a*c)/(2*a)))
         sub_x=math.sqrt(abs((b**2 - 4*a*c)/(2*a)))
-        add_x="-" + str(b)+ "+" + str(add_x)+"i"
-        sub_x="-" + str(b)+ "-" + str(sub_x)+"i"
+        add_x="-" + str(b)+ "+" + "{:.2f}".format(add_x)+"i"
+        sub_x="-" + str(b)+ "-" + "{:.2f}".format(sub_x)+"i"
     return add_x + ", "+ sub_x
 
-#a=int(input("type a number"))
-#b=int(input("type a number"))
-#c=int(input("type a number"))
+a=int(input("type a number"))
+b=int(input("type a number"))
+c=int(input("type a number"))
 
-#print("the two roots are: "+ Quadratic(a,b,c))
+print("the two roots are: "+ Quadratic(a,b,c))
 
 def BMI(lbs, inch):
     BMI_score=703*lbs/(inch**2)
@@ -61,10 +61,10 @@ def BMI(lbs, inch):
         
     return BMI_score
         
-lbs=int(input("Type weight in lbs: \n"))
-inch=int(input("Type height in inches: \n"))
-BMIs=str(BMI(lbs, inch))
+#lbs=int(input("Type weight in lbs: \n"))
+#inch=int(input("Type height in inches: \n"))
+#BMIs=str(BMI(lbs, inch))
 
-print("With BMI of:" + BMIs)
+#print("With BMI of:" + BMIs)
 
 
